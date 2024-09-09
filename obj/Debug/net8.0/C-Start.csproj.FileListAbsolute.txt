@@ -1,0 +1,15 @@
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\C-Start.exe
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\C-Start.deps.json
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\C-Start.runtimeconfig.json
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\C-Start.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\C-Start.pdb
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.GeneratedMSBuildEditorConfig.editorconfig
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.AssemblyInfoInputs.cache
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.AssemblyInfo.cs
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.csproj.CoreCompileInputs.cache
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.sourcelink.json
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.dll
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\refint\C-Start.dll
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.pdb
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.genruntimeconfig.cache
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\ref\C-Start.dll
