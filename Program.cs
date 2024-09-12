@@ -1,6 +1,8 @@
 ﻿string mensagemDeBoasVindas = "Boas vindas ao Screen Sound.";
-List<string> bandas = new List<string>{"U2","The Beatles"};
-
+//List<string> bandas = new List<string>{"U2","The Beatles"};
+Dictionary<string,List<int>> bandas = new Dictionary<string,List<int>>();
+bandas.Add("Calypso", new List<int> { 10, 8, 9 });
+bandas.Add("Roupa Nova", new List<int>());
 
 void ExibirLogo()
 {
@@ -18,9 +20,9 @@ void RegistrarBanda()
 {
     Console.Clear();
     ExibirTitulosAsteriscos("Registro de bandas");
-    Console.Write("\nDigite o nome da banda que deseja registrar: ");
+    Console.Write("Digite o nome da banda que deseja registrar: ");
      string nomeDaBanda = Console.ReadLine()!;
-    bandas.Add(nomeDaBanda);
+    bandas.Add(nomeDaBanda,new List<int>());
     Console.WriteLine($"A banda {nomeDaBanda} foi registrada com sucesso!");
     Thread.Sleep(2000);
     Console.Clear();
@@ -48,10 +50,10 @@ void ExibirOpcoesDoMenu()
             ExibirBandasRegistradas();
             break;
         case 3:
-            Console.WriteLine("Você digitou a opção " + opcaoEscolhida);
+            AvaliarBanda();
             break;
         case 4:
-            Console.WriteLine("Você digitou a opção " + opcaoEscolhida);
+            ExibirMediaBanda();
             break;
         case -1:
             Console.WriteLine("Tchau tchau :)");
@@ -66,22 +68,67 @@ void ExibirBandasRegistradas()
 {
     Console.Clear();
     ExibirTitulosAsteriscos("Exibindo todas as bandas registradas");
-    bandas.ForEach(banda =>{
+    foreach(string banda in bandas.Keys)
+    {
         Console.WriteLine($"Banda: {banda}");
-    });
-    Console.WriteLine("\nAberte qualquer tecla para voltar ao nemu inicial.");
-    Console.ReadKey();
-    Console.Clear();
-    ExibirOpcoesDoMenu();
+    }
+    retornarMenu();
 }
 
-void ExibirTitulosAsteriscos( string titulo)
+void ExibirTitulosAsteriscos(string titulo)
 {
     int qtdeLetras = titulo.Length;
     string asteriscos = string.Empty.PadLeft(qtdeLetras, '*');
     Console.WriteLine(asteriscos);
     Console.WriteLine(titulo);
     Console.WriteLine($"{asteriscos}\n");
+}
+
+void AvaliarBanda()
+{
+    Console.Clear();
+    ExibirTitulosAsteriscos("Avaliar Banda");
+    Console.Write("Digite a banda que deseja avaliar: ");
+    string nomeBanda = Console.ReadLine()!;
+    if (bandas.ContainsKey(nomeBanda)) 
+    {
+        Console.Write($"\nQual nota você dá para {nomeBanda}: ");
+        int nota = int.Parse(Console.ReadLine()!);
+        bandas[nomeBanda].Add(nota);
+        Console.WriteLine($"\nNota {nota} adicionada com sucesso!");
+    }
+    else
+    {
+        Console.WriteLine($"\nBanda {nomeBanda} não encontrada!");
+    }
+    retornarMenu();
+}
+
+void retornarMenu()
+{
+    Console.WriteLine("\nAberte qualquer tecla para voltar ao nemu inicial.");
+    Console.ReadKey();
+    Console.Clear();
+    ExibirOpcoesDoMenu();
+}
+
+void ExibirMediaBanda()
+{
+    Console.Clear();
+    ExibirTitulosAsteriscos("Média Banda");
+    Console.Write("Digite a banda que deseja ver a média: ");
+    string nomeBanda = Console.ReadLine()!;
+    if (bandas.ContainsKey(nomeBanda))
+    {
+        List<int> notas = bandas[nomeBanda];
+        double mediaNotas = notas.Average();
+        Console.WriteLine($"\nA nota da banda {nomeBanda} é: {mediaNotas}");
+    }
+    else
+    {
+        Console.WriteLine($"\nBanda {nomeBanda} não encontrada!");
+    }
+    retornarMenu();
 }
 
 ExibirOpcoesDoMenu();
