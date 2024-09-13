@@ -13,3 +13,17 @@ C:\wks\4-testes\C-Start\obj\Debug\net8.0\refint\C-Start.dll
 C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.pdb
 C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.genruntimeconfig.cache
 C:\wks\4-testes\C-Start\obj\Debug\net8.0\ref\C-Start.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\Microsoft.Extensions.Configuration.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\Microsoft.Extensions.Http.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\wks\4-testes\C-Start\bin\Debug\net8.0\OpenAI_API.dll
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.csproj.AssemblyReference.cache
+C:\wks\4-testes\C-Start\obj\Debug\net8.0\C-Start.csproj.Up2Date
